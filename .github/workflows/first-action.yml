@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hello world"
-      - name: Print goodbye
-        run: echo "Goodbye!"
+        run: | #Running multiple script commands with the short-hand syntax, using | before commands
+               echo "Hello world"
+               echo "Goodbye!"
   
