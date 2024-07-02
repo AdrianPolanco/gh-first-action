@@ -1,0 +1,17 @@
+#Setting the name of the workflow
+name: Test workflow
+#Setting up the events that will trigger the workflow
+on: workflow_dispatch
+#Defining the jobs
+jobs:
+ #Creating the first job of the workflow
+  first-job:
+  #Setting up this job´s runner, runners are machines which will run our job
+    #Using a Linux Ubuntu machine to run this job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world"
+      - name: Print goodbye
+        run: echo "Goodbye!"
+  
